@@ -71,18 +71,18 @@ submitBtn.onclick = () => {
   isConfirmPasswordOk = false;
 
   // validate first name
-  if (firstNameInput.value !== "") {
-    firstNameInput.classList.add("is-valid");
-  } else {
+  if (firstNameInput.value === "") {
     firstNameInput.classList.add("is-invalid");
+  } else {
+    firstNameInput.classList.add("is-valid");
     isFirstNameOk = true;
   }
 
   // validate last name
-  if (lastNameInput.value !== "") {
-    lastNameInput.classList.add("is-valid");
-  } else {
+  if (lastNameInput.value === "") {
     lastNameInput.classList.add("is-invalid");
+  } else {
+    lastNameInput.classList.add("is-valid");
     isLastNameOk = true;
   }
 
