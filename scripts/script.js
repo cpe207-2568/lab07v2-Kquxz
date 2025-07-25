@@ -71,7 +71,7 @@ submitBtn.onclick = () => {
   isConfirmPasswordOk = false;
 
   // validate first name
-  if (firstNameInput.value !== "") {
+  if (firstNameInput.value === "") {
     firstNameInput.classList.add("is-invalid");
   } else {
     firstNameInput.classList.add("is-valid");
@@ -79,7 +79,7 @@ submitBtn.onclick = () => {
   }
 
   // validate last name
-  if (lastNameInput.value !== "") {
+  if (lastNameInput.value === "") {
     lastNameInput.classList.add("is-invalid");
   } else {
     lastNameInput.classList.add("is-valid");
